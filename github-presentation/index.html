@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
-    <title>Object Oriented PHP</title>
+    <title>Middleware pattern in PHP</title>
     <meta name="description" content="A short presentation on Middleware pattern in PHP"/>
     <meta name="author" content="Ujjwal Ojha" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -39,17 +39,17 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h2>Object Oriented PHP</h2>
+            <h2>Middleware pattern in PHP</h2>
         </section>
         <section>
             <h2>
-                <a target="_black" href="http://twitter.com/sgrspkt" target="_blank">Sagar Sapkota</a>
+                <a target="_black" href="http://twitter.com/ojhaujjwal" target="_blank">Ujjwal Ojha</a>
             </h2>
         </section>
         <section>
             <h2>
                 <img
-                        src="img/linkedin-logo.jpg"
+                        src="img/gh.svg"
                         alt="Me on Github"
                         height="70px"
                         style="margin: 0;"
@@ -60,13 +60,13 @@
                         height="70px"
                         style="margin: 0;"
                         />
-                <a target="_black" href="http://twitter.com/sgrspkt" target="_blank">sgrspkt</a>
+                <a target="_black" href="http://twitter.com/ojhaujjwal" target="_blank">ojhaujjwal</a>
             </h2>
         </section>
 		<section>
 			<h3>Agendas</h3>
 			<ul>			
-				<li>OOP IN PHP</li>
+				<li>PSR-7</li>
 				<li class="fragment">Middleware pattern</li>
 				<li class="fragment">Zend Expressive project</li>
 			</ul>
@@ -315,6 +315,7 @@ $app->pipe('/foo', function ($req, $res, $next) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/js/head.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/js/reveal.min.js"></script>
 <script type="text/javascript">
+
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
@@ -326,7 +327,9 @@ $app->pipe('/foo', function ($req, $res, $next) {
         progress: true,
         history: true,
         center: true,
+
         transition: 'slide', // none/fade/slide/convex/concave/zoom
+
         // Optional reveal.js plugins
         dependencies: [
             { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -337,6 +340,7 @@ $app->pipe('/foo', function ($req, $res, $next) {
             { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/plugin/notes/notes.js', async: true }
         ]
     });
+
 </script>
 
 </body>
